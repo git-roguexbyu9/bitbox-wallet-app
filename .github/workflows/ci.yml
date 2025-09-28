@@ -119,7 +119,7 @@ jobs:
         with:
           submodules: recursive
       - name: Install Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: 1.24.x
       - name: Install Node.js
@@ -176,7 +176,7 @@ jobs:
         with:
           submodules: recursive
       - name: Install Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           # Take Go version to install from go.mod.
           go-version-file: 'go.mod'
@@ -215,7 +215,7 @@ jobs:
         with:
           node-version: '20.x'
       - name: Install Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           # Take Go version to install from go.mod
           go-version-file: 'go.mod'
@@ -306,7 +306,7 @@ jobs:
         with:
           submodules: recursive
       - name: Install Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version-file: 'go.mod'
       - name: Run simulator tests
