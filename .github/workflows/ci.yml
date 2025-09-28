@@ -123,7 +123,7 @@ jobs:
         with:
           go-version: 1.24.x
       - name: Install Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '20.x'
       - name: Set up Python
@@ -189,7 +189,7 @@ jobs:
           mkdir -p $GOPATH/$(dirname $GO_SRC_DIR)
           cp -a ${{github.workspace}} $GOPATH/$(dirname $GO_SRC_DIR)
       - name: Install Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '20.x'
       - name: Build iOS app
@@ -211,7 +211,7 @@ jobs:
         with:
           submodules: recursive
       - name: Install Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '20.x'
       - name: Install Go
